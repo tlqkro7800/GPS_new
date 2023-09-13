@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentTimer">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/user_pencil"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/graphite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="245dp"
+        />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공부 시간"
+        android:textSize="40dp"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_study_time"
+        android:text="00 : 00 : 00"
+        android:textSize="50dp"
+        android:fontFamily="@font/sult_bold"
+        app:layout_constraintTop_toBottomOf="@id/textview1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"/>
+    <Button
+        android:id="@+id/go_to_study"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/user_pencil"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/inner_pencilcase"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/btn_color"
+        android:text="공부하기"
+        android:fontFamily="@font/sult_bold"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/inner_pencilcase"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/user_pencil"
+        app:layout_constraintLeft_toRightOf="@id/go_to_study"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/clicked_blue"
+        android:text="필통에 넣기"
+        android:fontFamily="@font/sult_bold"
+        android:textSize="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

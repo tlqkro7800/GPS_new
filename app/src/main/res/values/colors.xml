@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="clicked_blue">#2395FF</color>
+    <color name="stroke_color">#CACACA</color>
+    <color name="blossom_theme">#FFC8FA</color>
+    <color name="forest_theme">#34631E</color>
+    <color name="coast_theme">#95FBFF</color>
+    <color name="btn_color">#9A9A9A</color>
+</resources>

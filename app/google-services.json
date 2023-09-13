@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "499229142687",
+    "project_id": "gps1004-bc91e",
+    "storage_bucket": "gps1004-bc91e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499229142687:android:d3b8cff3dbf4665b55fcaa",
+        "android_client_info": {
+          "package_name": "com.example.myapplication1004"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499229142687-qqv7n07r9sruv7dcs54fsjtf3fjuffup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsnB1gvOK7wJhkeUC_nnP7N5HUg_W7OOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499229142687-qqv7n07r9sruv7dcs54fsjtf3fjuffup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,5 @@
 package com.example.myapplication1004
 
-import FragmentStudy
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -44,12 +42,14 @@ class FragmentTimer : Fragment() {
         val buttonChangeActivity = view.findViewById<Button>(R.id.go_to_study)
         // 버튼 클릭 이벤트 처리
         buttonChangeActivity.setOnClickListener {
-            // FragmentTransaction을 사용하여 Fragment 변경
-            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            val fragment = FragmentStudy() // 대상 Fragment인 FragmentStudy를 생성
-            fragmentTransaction.replace(R.id.body_container, fragment)
-            fragmentTransaction.addToBackStack(null) // 뒤로 가기 스택에 추가
-            fragmentTransaction.commit()
+//            // FragmentTransaction을 사용하여 Fragment 변경
+//            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+//            val fragment = FragmentStudy() // 대상 Fragment인 FragmentStudy를 생성
+//            fragmentTransaction.replace(R.id.body_container, fragment)
+//            fragmentTransaction.addToBackStack(null) // 뒤로 가기 스택에 추가
+//            fragmentTransaction.commit()
+            val intent = Intent(requireContext(), StudyActivity::class.java)
+            startActivity(intent)
         }
 
         return view
